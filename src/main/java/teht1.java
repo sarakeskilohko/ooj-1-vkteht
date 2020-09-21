@@ -25,7 +25,7 @@ public class teht1 {
      * @.pre FORALL(i : 0 <= i < lottorivi.length ; lottorivi[i] > 0)
      *      & EXISTS(pienin : lottorivi ; pienin < lottorivi[i])
      * @.post pienin.eiSamojaLukuja()
-     *      & lottorivi[i] < 0  <- raise exception
+     *      & lottorivi[i] < 0  -> raise exception
      */
     boolean lotto(int[] lottorivi) throws NegValueException
 }
