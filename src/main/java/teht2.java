@@ -1,4 +1,5 @@
 public class teht2 {
+
     //*Halutaan selvittää nälkää näkevän ihmispopulaation alipainoiset yksilöt
     // eli yksilöt joiden BMI on alle 18,5. Suunnittele järkevät rutiinimäärittelyt
     // yksittäisen henkilön painoindeksin laskemiseksi. Perustele myös sanallisesti
