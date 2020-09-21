@@ -18,6 +18,8 @@ public class teht2 {
      * @.post RESULT = (paino / pituus^2)
      * & RESULT > 0
      * & RESULT < 18.5 -> raise exception
+     * Tuloksen täytyy olla positiivinen, muuten lasku on mennyt väärin.
+     * Alipainoisten laskemisen helpottamiseksi heitetään AlipainoPoikkeus aina, kun BMI on alle 18,5.
      */
     double BMI(double paino, double pituus) throws AlipainoPoikkeus
 }
