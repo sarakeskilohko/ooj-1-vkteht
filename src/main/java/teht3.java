@@ -16,4 +16,17 @@ public class teht3 {
      * & !(B.onTyhjä()) -> raise exception
      */
     boolean taulukko(int [][] A) throws notEmptyException
+
+        public static boolean onTyhjä(int [][] X) {
+            for (int i = 0 ; i < X.length ; i++) {
+                for (int j = 0 ; j < X[i].length ; j++)  {
+                    if ([i][j] == 0) {
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+            }
+        }
 }
