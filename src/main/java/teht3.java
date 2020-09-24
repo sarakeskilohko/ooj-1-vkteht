@@ -9,7 +9,9 @@ public class teht3 {
 
     /**
      * Paluttaa true tai false sen perusteella voidaanko kappale A lisätä B:hen.
+     * Alkuehto: taulukot eivät voi olla tyhjiä.
      * @.pre B != A, A != null
+     * Loppuehto: Tarkistetaan, voidaanko lisäys tehdä ruutuun (onko ruutu tyhjä; tapahtuuko lisäys taulukon reunojen sisällä)
      * @.post B.onTyhjä() => B.add(A)
      * & !(B.onTyhjä()) -> raise exception
      */
