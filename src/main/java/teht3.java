@@ -9,24 +9,11 @@ public class teht3 {
 
     /**
      * Paluttaa true tai false sen perusteella voidaanko kappale A lisätä B:hen.
-     * Alkuehto: taulukot eivät voi olla tyhjiä.
-     * @.pre B != A, A != null
-     * Loppuehto: Tarkistetaan, voidaanko lisäys tehdä ruutuun (onko ruutu tyhjä; tapahtuuko lisäys taulukon reunojen sisällä)
-     * @.post B.onTyhjä() => B.add(A)
-     * & !(B.onTyhjä()) -> raise exception
+     * @.pre B != A && A != null && B != null
+     * @.post FORALL(i : 0 <= i < A.size ; B.size[i][i] == 0)
+     *        FORALL(i : 0 <= i < A.size ; B.size[i][i] == null)
+     * @throws notEmptyException
      */
     boolean taulukko(int [][] A) throws notEmptyException
 
-        public static boolean onTyhjä(int [][] X) {
-            for (int i = 0 ; i < X.length ; i++) {
-                for (int j = 0 ; j < X[i].length ; j++)  {
-                    if ([i][j] == 0) {
-                        return true;
-                    }
-                    else {
-                        return false;
-                    }
-                }
-            }
-        }
 }
