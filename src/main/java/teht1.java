@@ -24,8 +24,11 @@ public class teht1 {
      * Palauttaa true tai false (eli ei duplikaatteja vai on duplikaatteja)
      * @.pre FORALL(i : 0 <= i < lottorivi.length ; lottorivi[i] > 0)
      *      & EXISTS(pienin : lottorivi ; pienin < lottorivi[i])
-     * @.post pienin.eiSamojaLukuja()
-     *      & lottorivi[i] < 0  -> raise exception
+     * @.post EXISTS(int i = 0; i < lottorivi.length; i++, FORALL( int j = 0; j < lottorivi.length; j++, lottorivi[0] != lottorivi[1]))
+     * AND lottorivi[0] == minArvo
      */
-    boolean lotto(int[] lottorivi) throws NegValueException
+    boolean lotto(int[] lottorivi) throws NegValueException{
+        arrays.sort(lottorivi);
+
+    }
 }
